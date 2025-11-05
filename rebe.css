@@ -26,6 +26,8 @@
     }
 }
 
+
+
 body {
     background: linear-gradient(30deg, #00c3ff, #000000);
     background-repeat: no-repeat;
@@ -135,68 +137,73 @@ nav li img {
     width: 700px;
 }
 
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+
+
+    25% {
+        margin-left: -78%
+    }
+
+
+
+    50% {
+        margin-left: -160%
+    }
+
+
+
+    75% {
+        margin-left: -238%
+    }
+
+    100% {
+        margin-left: -0%
+    }
+}
+
+.servicios__pipi {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    animation: slide 16s infinite;
+    overflow: hidden;
+
+
+}
+
 .servicios__index {
     margin-top: 100px;
+    margin-left: 200px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 100px;
     align-items: center;
     justify-content: center;
 }
 
+.mecanica {
+    display: flex;
+    margin: 200px;
+
+    align-items: end;
+    bottom: 100px;
+    justify-content: center;
+    position: relative;
+}
+
 .servicios__index p {
     font-size: 20px;
+    position: absolute;
+    background-color: #ffffffdd;
+    padding: 10px;
+    border-radius: 4vh;
 }
 
 .servicios__index img {
-    width: 400px;
-    border-radius: 4vh;
+    width: 600px;
     margin-top: 10px;
-    box-shadow: 0px 0px 20px #000;
-}
-
-.mecanica__general {
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 4vh;
-    box-shadow: 0px 0px 20px #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px;
-}
-
-.mecanica__pesada {
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 4vh;
-    box-shadow: 0px 0px 20px #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px;
-}
-
-.mecanica__electrica {
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 4vh;
-    box-shadow: 0px 0px 20px #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px;
-}
-
-.mecanica__de__auxilio {
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 4vh;
-    box-shadow: 0px 0px 20px #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px;
 }
 
 @media (max-width:1000px) {
@@ -233,6 +240,49 @@ nav li img {
 
     .servicios__index img {
         width: 200px;
+    }
+
+    @keyframes slide {
+        0% {
+            margin-left: 0;
+        }
+
+
+
+        25% {
+            margin-left: -100%
+        }
+
+
+
+        50% {
+            margin-left: -190%
+        }
+
+
+
+        75% {
+            margin-left: -280%
+        }
+
+        100% {
+            margin-left: -0%
+        }
+    }
+
+    .servicios__index {
+        margin-left: 80px;
+        margin-top: 200px;
+    }
+
+    .mecanica {
+        margin: 60px;
+    }
+
+    .servicios__index p {
+        font-size: 18px;
+        text-wrap: nowrap;
+        padding: 6px;
     }
 
 }
