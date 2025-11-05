@@ -29,7 +29,6 @@
 body {
     background: linear-gradient(30deg, #00c3ff, #000000);
     background-repeat: no-repeat;
-    height: 1000px;
 }
 
 header {
@@ -127,7 +126,77 @@ nav li img {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 6vh;
-    width: 600px;
+    width: 680px;
+    box-shadow: 0px 0px 20px #00c3ff;
+    transition: 1s;
+}
+
+.titulo__secundario__index img:hover {
+    width: 700px;
+}
+
+.servicios__index {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicios__index p {
+    font-size: 20px;
+}
+
+.servicios__index img {
+    width: 400px;
+    border-radius: 4vh;
+    margin-top: 10px;
+    box-shadow: 0px 0px 20px #000;
+}
+
+.mecanica__general {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 4vh;
+    box-shadow: 0px 0px 20px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+}
+
+.mecanica__pesada {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 4vh;
+    box-shadow: 0px 0px 20px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+}
+
+.mecanica__electrica {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 4vh;
+    box-shadow: 0px 0px 20px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+}
+
+.mecanica__de__auxilio {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 4vh;
+    box-shadow: 0px 0px 20px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
 }
 
 @media (max-width:1000px) {
@@ -152,6 +221,18 @@ nav li img {
 
     .titulo__secundario__index img {
         width: 300px;
+    }
+
+    .titulo__secundario__index img:hover {
+        width: 340px;
+    }
+
+    .servicios__index {
+        gap: 30px;
+    }
+
+    .servicios__index img {
+        width: 200px;
     }
 
 }
